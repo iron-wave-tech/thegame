@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import * as ReactDOM from 'react-dom';
+
 // Card data with activities
 const cardActivities = [
     "You have to eat my колбаса",
@@ -19,10 +22,10 @@ const cardActivities = [
 
 // Main App Component
 const App = () => {
-    const [cards, setCards] = React.useState([...cardActivities]);
-    const [currentCard, setCurrentCard] = React.useState(null);
-    const [isFlipped, setIsFlipped] = React.useState(false);
-    const [isShuffling, setIsShuffling] = React.useState(false);
+    const [cards, setCards] = useState([...cardActivities]);
+    const [currentCard, setCurrentCard] = useState(null);
+    const [isFlipped, setIsFlipped] = useState(false);
+    const [isShuffling, setIsShuffling] = useState(false);
 
     // Fisher-Yates shuffle algorithm
     const shuffleCards = () => {
@@ -90,6 +93,12 @@ const App = () => {
     );
 };
 
-// Render the app
-const rootElement = document.getElementById('app');
-ReactDOM.render(<App />, rootElement); 
+// Make sure the DOM is loaded before rendering
+window.addEventListener('DOMContentLoaded', () => {
+    ReactDOM.render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>,
+        document.getElementById('app')
+    );
+}); 
