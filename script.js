@@ -11,7 +11,7 @@ const cardActivities = [
     "Pick a food cover me in it and lick it off",
     "Spin the Body – It's a YGIG we each pick a new position every 3 minutes—no repeats!",
     "Pick the chair lie back and let it slide in",
-    "Give each other pet names for the next hour",
+    "The Pillow Press – Elevate the hips with a pillow for deeper angles and extra stimulation",
     "Do your best impression of each other",
     "The Melted Candle – You lie flat with legs slightly raised while the other kneels between them—slow, deep, and perfect for eye contact.",
     "The X Marks the Spot – Lie on your back with legs crossed while I kneel—new angles, new sensations"
