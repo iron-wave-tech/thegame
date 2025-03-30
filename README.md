@@ -12,7 +12,7 @@ A fun, interactive card game for couples built with modern web technologies. Per
 ## Setup
 1. Clone the repository:
 ```bash
-git clone https://github.com/ncumming/thegame.git
+git clone https://github.com/iron-wave-tech/thegame.git
 cd thegame
 ```
 
@@ -40,19 +40,25 @@ npm run preview
 ```
 
 ## Deployment
-The application uses GitHub Actions for automatic deployment to GitHub Pages.
+
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow runs on:
+- Every push to the `main` branch
+- Manual trigger through GitHub Actions
 
 ### Automatic Deployment
-Push changes to the main branch and GitHub Actions will:
-1. Build the application
-2. Deploy to GitHub Pages
-3. Make it available at https://ncumming.github.io/
+Push your changes to the `main` branch and the site will be automatically deployed to GitHub Pages.
 
 ### Manual Deployment
-To deploy manually:
-```bash
-npm run deploy
-```
+To trigger a manual deployment:
+1. Go to the [Actions tab](https://github.com/iron-wave-tech/thegame/actions) in the repository
+2. Select the "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
+4. Select the branch you want to deploy from
+5. Click "Run workflow"
+
+The deployed site will be available at: `https://iron-wave-tech.github.io/thegame/`
+
+Note: Make sure GitHub Pages is enabled in your repository settings and configured to deploy from the `gh-pages` branch.
 
 ## Project Structure
 ```
